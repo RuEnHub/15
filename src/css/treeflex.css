@@ -1,0 +1,38 @@
+.tf-custom .tf-nc {
+    height: 15px; width: 15px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+}
+
+.btn-node-active {
+    height: 16px; width: 16px;
+    padding: 0;
+    border: 0;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.btn-node {
+    height: 16px; width: 16px;
+    padding: 0;
+    border: 0;
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+
+.btn-node:hover {
+    /*height: 170px; width: 170px;*/
+    background-color: #9ACD32;
+}
+
+.tf-custom .tf-nc::before, /*вертикальные линии*/
+.tf-custom .tf-nc::after {
+    border-left-color: dodgerblue;
+    border-left-width: 2px;
+}
+
+.tf-custom li li::before { /*горизонтальные линии линии*/
+    border-top-color: dodgerblue;
+    border-top-width: 2px;
+}
