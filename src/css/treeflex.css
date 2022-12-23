@@ -1,12 +1,14 @@
 .tf-custom .tf-nc {
-    height: 15px; width: 15px;
+    height: 15px;
+    width: 15px;
     padding: 0;
     border: 0;
     border-radius: 50%;
 }
 
 .btn-node-active {
-    height: 16px; width: 16px;
+    height: 16px;
+    width: 16px;
     padding: 0;
     border: 0;
     background-color: red;
@@ -14,25 +16,41 @@
 }
 
 .btn-node {
-    height: 16px; width: 16px;
+    height: 16px;
+    width: 16px;
     padding: 0;
     border: 0;
     background-color: dodgerblue;
     border-radius: 50%;
+    z-index: 1;
+}
+
+.btn-node, .btn-node-active {
+    transform: scale(1.1);
+    transition: transform 0.15s ease;
 }
 
 .btn-node:hover {
-    /*height: 170px; width: 170px;*/
-    background-color: #9ACD32;
+    background-color: #9acd32;
+}
+
+.btn-node:hover, .btn-node-active:hover {
+    transform: scale(1.5);
+}
+
+.tf-tree {
+    padding: 8px;
 }
 
 .tf-custom .tf-nc::before, /*вертикальные линии*/
 .tf-custom .tf-nc::after {
+    z-index: -2;
     border-left-color: dodgerblue;
     border-left-width: 2px;
 }
 
-.tf-custom li li::before { /*горизонтальные линии линии*/
+.tf-custom li li::before {
+    /*горизонтальные линии линии*/
     border-top-color: dodgerblue;
     border-top-width: 2px;
 }
